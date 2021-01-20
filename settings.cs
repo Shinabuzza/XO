@@ -10,28 +10,25 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form1 : Form
+    public partial class settings : Form
     {
-
-        public Form1()
+        public settings()
         {
-
             InitializeComponent();
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
-            _3x3 smallField = new _3x3();
-            smallField.Show();
 
-
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             game5x5 bigField = new game5x5();
             bigField.Show();
+            Close();
         }
     }
 }
